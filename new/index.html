@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Jokes</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="javascript.js">
+</head>
+<body>
+   <h1>Get Greek-Jokes</h1> <br>
+    <p>Joke: <span id="joke"></span></p>
+
+    <script>
+        const api_url="https://geek-jokes.sameerkumar.website/api?format=json";
+        async function getJokes(){
+            const response = await fetch(api_url);
+            const data = await response.json();
+            const {joke} = data;
+
+            document.getElementById('joke').textContent = joke;
+            console.log(joke);
+        }
+        getJokes();
+    </script>
+    <br><br><br><br><br>
+<footer>Press F5 or Refresh the page to get a new joke..</footer>
+</body>
+</html>

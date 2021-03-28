@@ -1,0 +1,25 @@
+
+body{
+    background-color:beige;
+    
+}
+h1{
+    font-size:xx-large;
+    align-items: center;
+    font-style: italic;
+    text-transform: capitalize;
+    
+}
+p{
+  color: rgb(36, 131, 57);
+  font-size: large;
+  float: inline-start;
+  font-weight: bolder;
+
+}
+footer{
+    text-align-last: center;
+color:blueviolet;
+font-style: oblique;
+    
+}
